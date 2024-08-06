@@ -87,4 +87,5 @@ for i, (user_msg, ai_msg) in enumerate(st.session_state.conversation):
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8501))
-    st.run(port=port)
+    st._is_running_with_streamlit = False  # Hack to make Streamlit bind to the specified port
+    st.run(host='0.0.0.0', port=port)
