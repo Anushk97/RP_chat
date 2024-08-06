@@ -3,3 +3,4 @@ requests
 langchain
 huggingface-hub
 beam
+langchain_community
