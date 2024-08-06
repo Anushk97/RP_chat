@@ -84,8 +84,3 @@ for i, (user_msg, ai_msg) in enumerate(st.session_state.conversation):
         st.markdown(f"**User:** {user_msg}")
     with st.chat_message("assistant", avatar="👧"):
         st.markdown(f"**Silicon Maid:** {ai_msg}")
-
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8501))
-    st._is_running_with_streamlit = False  # Hack to make Streamlit bind to the specified port
-    st.run(host='0.0.0.0', port=port)
