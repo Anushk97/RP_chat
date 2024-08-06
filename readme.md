@@ -4,6 +4,8 @@
 
 This repository contains the code and resources for chat interface using Streamlit. It aims to use Silicon Maid LLM and create a role playing chatbot.
 
+Access the deployed app here: https://rpchat-1362ad5666fa.herokuapp.com/
+
 ## Installation
 To install and run the chat interface, follow these steps:
 
